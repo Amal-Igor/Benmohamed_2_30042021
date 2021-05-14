@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/bcab95efac.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
     <title>Reservia OpenClassrooms</title>
 </head>
 <body>
@@ -14,12 +15,12 @@
         </div>
 
         <!--NavMenu-->
-            <nav>
-                <ul>
-                    <li><a href="#hosting">Hébergements</a></li>
-                    <li><a href="#activities">Activités</a></li>
-                    <li><a href="#SignUp">S'inscrire</a></li>
-                </ul>
+        <nav>
+            <ol>
+                <li><a href="#hosting-main">Hébergements</a></li>
+                <li><a href="#activities">Activités</a></li>
+                <li><a href="#SignUp"><strong>S'inscrire</strong></a></li>
+            </ol>
             </nav>
         <!--NavMenu-->      
     </header>
@@ -71,35 +72,106 @@
                 </div>
         
 
-        <!--Section1Host--> 
+        <!--Section1HostMain--> 
+         <section id="hosting-Main"> 
+
+            <!--Hosting-->    
+            <section id="hostinMarseille">    
+                <H2>Hébergements à Marseille</H2>  
+            
+            
+           
+                <a href=#>
+                    <div id="Hosting">
+                        <figure>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt ="Chambre avec lit superposés">  
+                        </figure>
+
+                        <div class="description">
+                            <h3>Auberge de la Cannebière</h3>
+                            <p>Nuit à partir de <span class="price">25€</span></p>
+                                    <ul class="rating">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                        </div>
+                    </div>
+            
+                </a>
+            </section>
             <!--Hosting-->
-            <div id="Hosting"></div>
-            <!--Hosting-->
+
             <!--AsidePopular-->
+            <aside id="mostPopular"><h2>Les plus populaires <i class="fas fa-chart-line"></i></h2> 
+
+                <article>
+                    <a href=# >
+                            <div id="popularPlaces">
+                                <figure>
+                                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                         alt="Chambre verte">
+                                    <!--???FIGCAPTION???-->
+                                </figure>
+                                
+                                    <div class="description">
+                                        <h3>Hôtel Le Soleil du Matin</h3>
+                                        <p>Nuit à partir de <span class="price">128€</span></p>
+                                         <ul class="rating">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                    </a>
+                    </article>
+
+                    <article></article>
+
+                    <article></article>
+
+
+                </aside>
             <!--AsidePopular-->
-        <!--Section1Host-->
+         </section>
+        <!--Section1HostMain-->
+        
 
         <!--Section2Activities-->
-        <div id="Activities"></div>
+        <section id="activity"><h2>Activités à Marseille</h2>
+                <div id="Activities">
+                    <figure>
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port">
+                    </figure>
+
+                </div>
+            </section>
+        
+        </section>
         <!--Section2Activities-->
+
     
 </main>
     <!--Main-->
 
+
     <!--Footer-->
     <footer>
-        <ul><H2>A propos</H2>
+        <ul><H3>A propos</H3>
             <li><a href="#qualitychart">Charte </a></li>
             <li><a href="#CGV">Conditions générales de ventes</a></li>
             <li><a href="#dataConfidentiality">Données et confidentialité</a></li>
         </ul>
 
-        <ul><H2>Nos Hébergements</H2>
+        <ul><H3>Nos Hébergements</H3>
             <li><a href="#fonctionnement">Fonctionnement du site</a></li>
             <li><a href="#CGV">Conditions générales de ventes</a></li>
         </ul>
 
-        <ul><h2>Assitance</h2>
+        <ul><h3>Assitance</h3>
             <li><a href="#helpCenter">Centre d'aide</a></li>
             <li><a href="#contact">Nous contacter</a></li>
         </ul>

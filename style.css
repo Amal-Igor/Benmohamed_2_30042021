@@ -1,0 +1,20 @@
+.rating li{
+    display:inline;
+}
+
+*{
+    text-decoration:none;   
+}
+ul{
+    list-style-type: none;
+    text-decoration:none;
+}
+li ~ nav{
+    display:inline;
+}
+
+ol li{
+    list-style-type: none;
+    display:inline;
+}
+
