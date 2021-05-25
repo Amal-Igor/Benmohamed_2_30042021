@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bcab95efac.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="p2-template.css"/>
 </head>
@@ -12,30 +13,36 @@
 <body> 
     <!--HEADER-->
     <header>
-        <div class="logo"><img src="images/logo/reservia@3x.png" alt="Logo Reservia"/></div>
+        <div class="logo-area"><img id="logo-png" class="logo-png" src="images/logo/reservia@3x.png" alt="Logo Reservia"/></div>
 
         <div class="navbar">
-            <div id="nav-it" class="hebergements">Hébergements</div>
-            <div id="nav-it" class="activites">Activités</div>
-            <div id="nav-it" class="signup">S'inscrire</div>
+            <div id="hebergements" class="nav-it"><a href="#hosting-all">Hébergements</a></div>
+            <div id="activites" class="nav-it"><a href="#activities">Activités</a></div>
+            <div id="signup" class="nav-it"><a><strong>S'inscrire</strong></a></div>
         </div>
     </header>
         
 
     <!--Search secion-->
         <div class="researchsection">
-            <div class="searchbar"> <h3>BARRE DE RECHERCHE</h3><br/>
-                EN ple
-                <div class="form"> Barre de recherche</div>
-            </div>
-            <div class="searchfilters">Filtres
-                <div class="filters">1</div>
-                <div class="filters">2</div>
-                <div class="filters">3</div>
-                <div class="filters">4</div>
+            <div class="searchbar-header"> <span><h3>Trouvez votre hébergement pour des vacances de rêve</h3><br/></span>
+                <span><p>En plein centre ville ou en pleine nature</p></span></div>
+                <div class="form">
+                    <form>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span><input type="search" id="SearchBar" placeholder="Marseille, France"></span>
+                    <span><button>Rechercher</button></span>
+                    </form>
+                
+                </div>
+            <div class="searchfilters"><span>Filtres</span>
+                <div class="filters"><span><i class="fas fa-money-bill-wave"></i></span><span>Economique</span></div>
+                <div class="filters"><span><i class="fas fa-child"></i>   </span><span>Familial</span></div>
+                <div class="filters"><span><i class="fas fa-heart"></i></span><span>Romantique</span></div>
+                <div class="filters"><span><i class="fas fa-dog"></i></span><span>Animaux autorisés</span></div>
             </div>
             
-            <div class="searchresults">Résultats recherche</div>
+            <div class="searchresults"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</div>
 
 
 
@@ -45,7 +52,7 @@
     
     <!--MainHébergements à marseille-->
         <div id="main" class="main">
-            <div class="hosting-all">
+            <div id="hosting-all" class="hosting-all">
                 <!--Hébergements-->
                 <div class="hosts-results"> 
                     <div class="hosts-header">Hébergements à Marseille</div>
@@ -58,15 +65,15 @@
                     <div class="hosts-footer">Afficher plus</div>
                 </div>
                     <!--Les plus populaires-->
-                <aside class="mostpopular"> Les plus populaires
+                <aside class="mostpopular"> <span>Les plus populaires</span>
                     <div id="popular" class="pop-1">1</div>
                     <div id="popular" class="pop-2">2</div>
                     <div id="popular" class="pop-3">3</div>
                 </aside>
-
-        </div>
+           </div>
+      
     <!--Activités-->
-        <div class="activities">
+        <div id="activities" class="activities">
             <div class="activity-header">Activités à Marseille</div>
 
             <div id="activity" class="act-1">1</div>
