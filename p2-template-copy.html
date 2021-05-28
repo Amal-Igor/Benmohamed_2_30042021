@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bcab95efac.js" crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="p2-template.css"/>
+    <link rel="stylesheet" href="p2-template-copy.css"/>
 </head>
 
 
@@ -25,8 +25,8 @@
 
     <!--Search secion-->
         <div class="researchsection">
-            <div class="searchbar-header"> <span><h3>Trouvez votre hébergement pour des vacances de rêve</h3><br/></span>
-                <span><p>En plein centre ville ou en pleine nature</p></span></div>
+                <span class="sectionheader"> Trouvez votre hébergement pour des vacances de rêve</span>
+                <span><p>En plein centre ville ou en pleine nature</p></span>
                 <div class="form">
                     <form>
                     <span><i class="fas fa-map-marker-alt"></i></span>
@@ -51,38 +51,44 @@
         <!--section des filtres-->
     
     <!--MainHébergements à marseille-->
-        <div id="main" class="main">
-            <div id="hosting-all" class="hosting-all">
-                <!--Hébergements-->
-                <div class="hosts-results"> 
-                    <div class="hosts-header">Hébergements à Marseille</div>
-                    <div id="hosts"  class="hosts-1">1</div>
-                    <div id="hosts"  class="hosts-2">2</div>
-                    <div id="hosts"  class="hosts-3">3</div>
-                    <div id="hosts"  class="hosts-4">4</div>
-                    <div id="hosts"  class="hosts-5">5</div>
-                    <div id="hosts"  class="hosts-6">6</div>
-                    <div class="hosts-footer">Afficher plus</div>
+        <div id="main-content" class="main-content">
+            <div id="main-hosting" class="main-hosting">
+                <div id="hosts" class="hosts">
+                    <span class="sectionheader">Hébergements à Marseille</span>
+                        <div class="hosts-results">
+                            <span class="host-item">1</span>
+                            <span class="host-item">2</span>
+                            <span class="host-item">3</span>
+                            <span class="host-item">4</span>
+                            <span class="host-item">5</span>
+                            <span class="host-item">6</span>
+                        </div>
+                    <span class="sectionfooter">Afficher plus</span>
                 </div>
-                    <!--Les plus populaires-->
-                <aside class="mostpopular"> <span>Les plus populaires</span>
-                    <div id="popular" class="pop-1">1</div>
-                    <div id="popular" class="pop-2">2</div>
-                    <div id="popular" class="pop-3">3</div>
+
+                <aside id="popular" class="popular">
+                    <span class="sectionheader">hi</span>
+                        <div class="pop-section">
+                            <span class="pop-items">1</span>
+                            <span class="pop-items">2</span>
+                            <span class="pop-items">3</span>
+                        </div>
+
                 </aside>
             </div>
-      
-    <!--Activités-->
-                <div id="activities" class="activities">
-                    <div class="activity-header">Activités à Marseille</div>
 
-                    <div id="activity" class="act-1">1</div>
-                    <div id="activity" class="act-2">2</div>
-                    <div id="activity" class="act-3">3</div>
-                    <div id="activity" class="act-4">4</div>
-                    <div id="activity" class="act-5">5</div>
-                    <div id="activity" class="act-6">6</div>
+            <div id="activities" class="activities">
+                <span class="sectionheader">Activités à Marseille</span>
+                <div class="act-section">
+                    <span id="act-1" class="act-items">1</span>
+                    <span id="act-2" class="act-items">2</span>
+                    <span id="act-3" class="act-items">3</span>
+                    <span id="act-4" class="act-items">4</span>
+                    <span id="act-5" class="act-items">5</span>
+                    <span id="act-6" class="act-items">6</span>
                 </div>
+
+            </div>
 
         </div>
 
@@ -90,21 +96,32 @@
 
     <!--FOOTER-->
     <footer>
-        <div id="foot-ele" class="about">A propos 
+        <div id="about" class="foot-ele">
+            <span class="sectionheader">A propos</span>
             <span class="foot-it">1</span>
             <span class="foot-it">1</span>  
             <span class="foot-it">1</span>      
         </div>
-        <div id ="foot-ele" class="host-foot">Nos Hébergements
+
+        <div id ="host-foot" class="foot-ele">
+            <span class="sectionheader">Nos Hébergements</span>
             <span class="foot-it">1</span>
             <span class="foot-it">1</span>  
         </div>
-        <div id ="foot-ele" class="assist">Assistance
+
+        <div id ="assist" class="foot-ele">
+            <span class="sectionheader">Assistance</span>
             <span class="foot-it">1</span>
             <span class="foot-it">1</span> 
 
         </div>
-    </footer>  
+    </footer>
+
+
+
+
+
+    
 </body>
 
 </html>
