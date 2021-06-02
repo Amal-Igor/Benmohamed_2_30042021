@@ -125,7 +125,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 42rem;
+    height: 37rem;
     margin-bottom: 2rem;
 }
 
@@ -155,6 +155,7 @@ header{
 .popular{
     border:solid;
     width: 30%;
+    height:37rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -176,7 +177,7 @@ header{
 
 /*activities*/
 .activities{
-    height: 35rem;
+    height: 25rem;
     border: solid;
     display: flex;
     flex-direction: column;
@@ -184,7 +185,7 @@ header{
 
 .act-section{
     display: grid;
-    grid-template-columns: 12rem 12rem 12rem 12rem;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
     grid-template-rows: 10rem 4rem 9rem;
     justify-content: space-between;
     width: 100%;
@@ -534,7 +535,7 @@ footer{
 
 
 
-    @media screen and (min-width:545px) and (max-width:812px){
+    @media screen and (min-width:545px) and (max-width:811px){
     body{
         border: solid;
         max-height: inherit;
@@ -683,6 +684,39 @@ footer{
     }
 }
 
-@media screen and (min-width:812px) and (max-width:1024px)
+@media screen and (min-width:812px) and (max-width:1024px){
+    
+    .main-content{
+
+    }
+
+    #main-hosting{
+
+    }
+
+    .hosts{
+
+    }
+
+    .hosts-results{
+
+    }
+
+    .popular{
+
+    }
+
+    .pop-section{
+
+    }
+
+    .activities{
+
+    }
+
+    .act-section{
+
+    }
+}
 
 
