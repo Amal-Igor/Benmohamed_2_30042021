@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'raleway';
+    font-family: "raleway";
     src:url(Raleway/Raleway-VariableFont_wght.ttf);
 }
 
@@ -271,6 +271,11 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.--popicon{
+    margin-left: 2em;
+    font-size: 1rem;
 }
 
 .pop-section{
