@@ -34,37 +34,37 @@
         <form id="searchbar" class="searchbar">
             <span id="searchbar-logo"><i id ="searchlogo" class="fas fa-map-marker-alt"></i></span>
             <input type="search" id="searchbar-input" placeholder="Marseille, France">
-            <button id="searchbar-button"><span id="searchbar-text">Rechercher</span></button>
+            <button id="searchbar-button"><span id="searchbar-text">Rechercher</span> <span id="searchbar-icon"><i class="fas fa-search"></i></span></button>
         </form>
 
         <div id="search-filters">
             <h2>Filtres</h2>
             <div id="filters-section">
                    <button id="economical" class="filters">
-                        <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-money-bill-wave --filtersicon"></i>
                         <span class="filters-it">Economique</span>
                     </button>
                 
 
                     <button id="familial" class="filters">
-                        <i class="fas fa-child"></i>
+                        <i class="fas fa-child --filtersicon"></i>
                         <span class="filters-it">Familial</span>
                     </button>
 
                     <button id="romantic" class="filters">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart --filtersicon"></i>
                         <span class="filters-it">Romantique</span>
                     </button>
     
 
                     <button id="animals" class="filters">
-                        <i class="fas fa-dog"></i>
+                        <i class="fas fa-dog --filtersicon"></i>
                         <span class="filters-it">Animaux autorisés</span>
                     </button>
             </div>
         </div>
 
-        <span id="resultsfooter" class="sectionfooter"><i id="results-footer" class="fas fa-info-circle"></i> Plus de 500 logements sont disponnibles dans cette ville</span>
+        <span id="resultsfooter" class="sectionfooter"><i class="fas fa-info --resultsicon"></i> Plus de 500 logements sont disponnibles dans cette ville</span>
 
 
     </div>
@@ -73,7 +73,7 @@
         <div id="main-content" class="main-content">
             <div id="main-hosting" class="main-hosting">
                 <div id="hosts" class="hosts">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2>Hébergements à Marseille </h2>
                         <div class="hosts-results">
                             <a class="host-item" href="#">
                                 <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt ="Chambre avec lit superposés"></div>
@@ -86,11 +86,50 @@
 
                             
 
-                            <span class="host-item">2</span>
-                            <span class="host-item">3</span>
-                            <span class="host-item">4</span>
-                            <span class="host-item">5</span>
-                            <span class="host-item">6</span>
+                            <a class="host-item" href="#">
+                                <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt ="Chambre avec deux lits simples"></div>
+                                <div class="host-description">
+                                    <h3 class="card-header">Hôtel du port</h3>
+                                    <p class="card-description">Nuit à partir de <strong>52€</strong></p>
+                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
+                            
+                            <a class="host-item" href="#">
+                                <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt ="Chambre cosy"></div>
+                                <div class="host-description">
+                                    <h3 class="card-header">Hôtel les mouettes</h3>
+                                    <p class="card-description">Nuit à partir de <strong>76€</strong></p>
+                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
+
+                            <a class="host-item" href="#">
+                                <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt ="Chambre avec lit double et tableau de l'océan"></div>
+                                <div class="host-description">
+                                    <h3 class="card-header">Hôtel de la mer</h3>
+                                    <p class="card-description">Nuit à partir de <strong>46€</strong></p>
+                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
+
+                            <a class="host-item" href="#">
+                                <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt ="Chambre avec lits superposés"></div>
+                                <div class="host-description">
+                                    <h3 class="card-header">Auberge Le Panier</h3>
+                                    <p class="card-description">Nuit à partir de <strong>23€</strong></p>
+                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
+
+                            <a class="host-item" href="#">
+                                <div class="host-img"><img class="host-figure" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt ="Chambre avec lits superposés"></div>
+                                <div class="host-description">
+                                    <h3 class="card-header">Hôtel chez Amina</h3>
+                                    <p class="card-description">Nuit à partir de <strong>96€</strong></p>
+                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
                         </div>
                     <span class="sectionfooter">Afficher plus</span>
                 </div>
@@ -102,16 +141,33 @@
                                 <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre verte"></div>
 
                                 <div class="pop-description">
-                                    <h3 class="pop-header">Auberge de la Cannebière</h3>
-                                    <p class="pop-description">Nuit à partir de <strong>25€</strong></p>
+                                    <h3 class="pop-header">Hôtel du Soleil le Matin</h3>
+                                    <p class="pop-description">Nuit à partir de <strong>128€</strong></p>
                                     <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
                                 </div>
 
                             </a>
 
 
-                            <span class="pop-items">2</span>
-                            <span class="pop-items">3</span>
+                            <a class="pop-items" href="#">
+                                <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre luxueuse"></div>
+
+                                <div class="pop-description">
+                                    <h3 class="pop-header">Au Coeur de l'eau <br/>Chambres d'hôtes</h3>
+                                    <p class="pop-description">Nuit à partir de <strong>71€</strong></p>
+                                    <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
+
+                            <a class="pop-items" href="#">
+                                <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double"></div>
+
+                                <div class="pop-description">
+                                    <h3 class="pop-header">Hôtel Tout bleu et Blanc</h3>
+                                    <p class="pop-description">Nuit à partir de <strong>68€</strong></p>
+                                    <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                </div>
+                            </a>
                         </div>
 
                 </aside>

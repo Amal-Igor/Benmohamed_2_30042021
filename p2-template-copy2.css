@@ -10,6 +10,7 @@ a{
 *{
     box-sizing: border-box;
     margin-top: 0;
+    text-decoration: none;
 }
 
 body{
@@ -36,7 +37,6 @@ header{
 }
 
 .logo-area{
-    border: solid;
     width: 6rem;
     height: 3rem;
     align-self: end;
@@ -51,16 +51,15 @@ header{
 }
 
 .nav-it {
-    border: solid;
     width: max-content;
     display: flex;
     height: 100%;
     box-sizing: border-box;
     flex-direction: column-reverse;
+    margin-right: 1em;
 }
 
 #researchsection{
-    border: solid;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,6 +84,7 @@ header{
     margin-bottom: 2em;
     align-items: center;
 }
+
 #searchbar-logo{
     font-size: 1.35rem;
     width: 2.45em;
@@ -92,6 +92,10 @@ header{
     text-align: center;
     border-radius: 20px 0 0 20px;
     background-color: #F2F2F2;
+}
+
+#searchbar-icon{
+    font-size:0;
 }
 
 #searchlogo{
@@ -125,7 +129,7 @@ header{
 }
 
 #filters-section {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 
@@ -133,28 +137,36 @@ header{
 
 .filters {
     display: flex;
-    height: 3rem;
+    height: 2.75rem;
     margin-right: auto;
     align-items: center;
     font-size: 1rem;
-    background: none;
-    border: 4px solid #F2F2F2;
-    border-radius: 30px;
+    border: 2px solid #d9d9d9;
+    margin-top: .75rem;
     border-left: none;
+    margin-left: 0.75em;
+    border-radius: 25px;
+}
+
+.--filtersicon{
+    align-self: center;
+    padding-top: 1em;
+    position: relative;
+    left: -10px;
+    background-color: #DEEBFF;
+    color:#0065FC;
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
 }
 
 .filters-it {
-    margin-left:0.30em;;
+    padding-right: 1em;
 }
 
-button > i{
-    display:flex;
-    justify-content: center;
-    background-color: #DEEBFF;
-    color:#0065FC;
-    border-radius: 100%;
-    padding: 14px;
-}
 
 .filters > button {
     display: flex;
@@ -170,17 +182,28 @@ button > i{
 
 #resultsfooter{
     margin-top: 1em;
+    margin-left: 1em;
 }
 
 #results-footer {
     margin-right: 0.75rem;
 }
 
+.--resultsicon{
+    margin-right: 0.75rem;
+    color:#0065FC;
+    padding-top: 10px;
+    border: 2px #d9d9d9 solid;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    padding-left: 15px;
+}
+
 
 /*HOSTing-all*/
 
 #main-content{
-    border: solid;
     width: 100%;
     display: flex;
     flex-direction: column; 
@@ -196,7 +219,6 @@ button > i{
 }
 
 .hosts{
-    border:solid;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -220,11 +242,11 @@ button > i{
 
 .host-img{
     height: 64%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .host-figure{
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     padding: 5px 5px 0px 5px;
@@ -244,7 +266,6 @@ button > i{
 }
 
 .popular{
-    border:solid;
     width: 30%;
     height:37rem;
     display: flex;
@@ -287,7 +308,7 @@ button > i{
 }
 
 .pop-figure{
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     height: 100%;
     padding: 6px 0px 6px 6px;
@@ -298,7 +319,6 @@ button > i{
 /*activities*/
 .activities{
     height: 40rem;
-    border: solid;
     display: flex;
     flex-direction: column;
 }
@@ -314,7 +334,7 @@ button > i{
 }
 
 .act-figure{
-        object-fit: fill;
+        object-fit: cover;
         width: 100%;
         height: 100%;
         padding: 5px 5px 0px 5px;
@@ -357,7 +377,7 @@ button > i{
 footer{
     width: 80%;
     height: 9rem;
-    margin-top: 3em;
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
     text-align: start;
@@ -386,7 +406,6 @@ footer{
 
 @media screen and (max-width:450px) {
     body{
-        border: solid;
         max-height: inherit;
     }
     
@@ -402,20 +421,29 @@ footer{
         justify-self: flex-end;
     }
 
-
-    #hebergements{
-        margin-left: inherit;
-        width: 100%;
-    }
-
-    #activites{
-        width: 100%;
-    }
-
     .searchbar{
         align-self: center;
         margin-top: 1rem;
         align-self: flex-start;
+    }
+
+    #searchbar-text{
+        font-size:0;
+    }
+
+    #searchbar-icon{
+        font-size: 1em;
+        position: relative;
+        bottom: 8px;
+    }
+
+    #searchbar-input{
+        width: 10.95rem;
+        font-size: 1rem;
+    }
+
+    #searchbar-button{
+        width: 4rem;
     }
 
     #search-filters{
@@ -495,18 +523,6 @@ footer{
         height: 75rem;
     }
 
-    #act-1-img{
-
-    }
-
-    .act-img{
-
-    }
-
-    .act-description{
-
-    }
-
     .act-items{
         height: 11rem;
     }
@@ -529,14 +545,15 @@ footer{
     
 @media screen and (min-width:450px) and (max-width:545px){
     body{
-        border: solid;
         max-height: inherit;
     }
     
-    header{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+
+    #logo-area{
+        width: 6rem;
+        height: 3rem;
+        align-self: start;
+        margin-right: auto;
     }
 
     #signup{
@@ -548,7 +565,10 @@ footer{
 
     #hebergements{
         margin-left: inherit;
-        width: 100%;
+    }
+
+    .nav-it{
+        margin-left: 0.5em;
     }
 
 
@@ -556,6 +576,25 @@ footer{
         align-self: center;
         margin-top: 1rem;
         align-self: flex-start;
+    }
+
+    #searchbar-text{
+        font-size:0;
+    }
+
+    #searchbar-icon{
+        font-size: 1em;
+        position: relative;
+        bottom: 8px;
+    }
+
+    #searchbar-input{
+        width: 10.95rem;
+        font-size: 1rem;
+    }
+
+    #searchbar-button{
+        width: 4rem;
     }
 
     #search-filters{
@@ -597,7 +636,6 @@ footer{
     }
 
     .pop-items {
-        border: solid;
         width: 13rem;
         height: 8rem;
         width: 80%;
@@ -648,9 +686,9 @@ footer{
 
     footer{
         display: flex;
-        flex-direction: row;
-        height: 10rem;
-        width:100%;
+        flex-direction: column;
+        height: 30rem;
+        justify-content: inherit;
     }
 
     .foot-ele{
@@ -661,17 +699,12 @@ footer{
 
 
 
-    @media screen and (min-width:545px) and (max-width:1250px){
+    @media screen and (min-width:545px) and (max-width:1200px){
     body{
-        border: solid;
         max-height: inherit;
     }
     
-    header{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-    }
+    
 
     #signup{
         grid-column: 2;
@@ -686,7 +719,17 @@ footer{
 
     #hebergements{
         margin-left: inherit;
-        width: 100%;
+    }
+
+    .nav-it{
+        margin-left: 0.5em;
+    }
+
+    #logo-area{
+        width: 6rem;
+        height: 3rem;
+        align-self: start;
+        margin-right: auto;
     }
 
   
@@ -714,7 +757,7 @@ footer{
         display:flex;
         flex-direction: column-reverse;
         margin-bottom: 3rem;
-        height: 110rem;
+        height: 132rem;
         justify-content: flex-end;
     }
 
@@ -733,26 +776,27 @@ footer{
         flex-direction: column;
         width: 100%;
         box-sizing: border-box;
-        height: 15%;
+        height: 22%;
         margin-bottom: 1rem;
     }
 
     .pop-section{
-        flex-direction: row;
+        flex-direction: column;
 
     }
 
     .pop-items {
         width: 13rem;
         height: 8rem;
-        width: 32%;
+        width: 75%;
         align-self: center;
+        max-width: 30rem;
     }
 
     #main-content{
         display: flex;
         flex-direction: column;
-        height: 110rem;
+        height: 130rem;
         justify-content: inherit;
     }
 
