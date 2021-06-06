@@ -29,8 +29,8 @@ body{
     max-width: 1440px;
     text-decoration:none;  
     font-family: 'raleway';
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 h2{
@@ -40,6 +40,11 @@ h2{
 h3{
     margin-bottom: 0;
 }
+
+.top-content-header{
+    font-size: 24px;
+}
+
 header{
     height: 5em;
     display: flex;
@@ -157,6 +162,12 @@ header{
     display: flex;
     justify-content: space-between;
 
+}
+
+.filters-header {
+    position: relative;
+    top: 4px;
+    font-size: 22px;
 }
 
 .--bluestar{
