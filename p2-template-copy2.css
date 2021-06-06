@@ -1,11 +1,23 @@
 @font-face{
-    font-family: "raleway";
+    font-family: "raleway" ,"sans serif";
     src:url(Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 a{
     color: inherit;
 }
+
+.growshadow {
+    -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+  }
+
+  .growshadow:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px #d9d9d9;
+  }
 
 *{
     box-sizing: border-box;
@@ -57,6 +69,16 @@ header{
     box-sizing: border-box;
     flex-direction: column-reverse;
     margin-right: 1em;
+    font-size: 14px;
+}
+
+#signup{
+    color:#0065FC;
+}
+
+.nav-it:hover{
+    color:#0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 #researchsection{
@@ -92,6 +114,7 @@ header{
     text-align: center;
     border-radius: 20px 0 0 20px;
     background-color: #F2F2F2;
+    padding-right: 3px;
 }
 
 #searchbar-icon{
@@ -115,6 +138,7 @@ header{
     font-size: 1.25rem;
     height: 100%;
 }
+
 #searchbar-button{
     background-color: #0065FC;
     color: white;
@@ -135,9 +159,17 @@ header{
 
 }
 
+.--bluestar{
+   color: #0065FC;
+}
+
+.--greystar{
+    color:#d9d9d9;
+}
+
 .filters {
     display: flex;
-    height: 2.75rem;
+    height: 50px;
     margin-right: auto;
     align-items: center;
     font-size: 1rem;
@@ -165,6 +197,7 @@ header{
 
 .filters-it {
     padding-right: 1em;
+    font-size: 18px;
 }
 
 
@@ -193,7 +226,7 @@ header{
     margin-right: 0.75rem;
     color:#0065FC;
     padding-top: 10px;
-    border: 2px #d9d9d9 solid;
+    border: 1px #d9d9d9 solid;
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -215,7 +248,7 @@ header{
     flex-direction: row;
     height: 37rem;
     margin-bottom: 2rem;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .hosts{
@@ -254,7 +287,7 @@ header{
 }
 
 .card-header {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 7px;
 }
 
@@ -293,6 +326,10 @@ header{
     box-shadow: 8px 14px 22px #0000002e;
 }
 
+.--poptext, .pop-rating{
+    padding-left: 7px;
+}
+
 .pop-header{
     font-size: 1rem;
 }
@@ -300,6 +337,7 @@ header{
 .pop-rating{
     margin-top: 2em;
     font-size: 0.75rem;
+    padding-top: 3em;
 }
 
 .pop-description{
@@ -310,6 +348,7 @@ header{
     height: 100%;
     width: 45%;
     margin-right: 7px;
+    min-width: 45%;
 }
 
 .pop-figure{
@@ -326,6 +365,7 @@ header{
     height: 40rem;
     display: flex;
     flex-direction: column;
+    margin-top: 1em;
 }
 
 .act-section{
@@ -336,6 +376,11 @@ header{
     width: 100%;
     height: 39rem;
     margin-top: 2em;
+}
+
+.act-items > h3{
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .act-figure{
@@ -380,9 +425,8 @@ header{
 }
 
 footer{
-    width: 80%;
+    width: 68%;
     height: 9rem;
-    margin-top: 2em;
     display: flex;
     justify-content: space-between;
     text-align: start;
@@ -420,6 +464,42 @@ footer{
         grid-template-rows: 50% 50%;
     }
 
+    .logo-area{
+        padding-top: 10px;
+    }
+
+    #hebergements{
+        width: 100%;
+        text-align: center;
+        padding-right: 30px;
+        justify-content: center;
+    }
+
+    #activites{
+        width:100%;
+        justify-content: center;
+    }
+
+    #act-nav-it {
+        text-align: center;
+    }
+
+    #signup:hover{
+        border-top: inherit;
+        border-bottom: inherit;
+    }
+
+    .nav-it:hover{
+        color:#0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: inherit;
+    }
+
+    #activities{
+        width: 100%;
+        text-align: center;
+    }
+
     #signup{
         grid-column: 2;
         grid-row: 1;
@@ -468,7 +548,7 @@ footer{
         display:flex;
         flex-direction: column-reverse;
         margin-bottom: 3rem;
-        height:100rem;
+        height:110rem; /*100*/
     }
 
     #hosts{
@@ -495,6 +575,10 @@ footer{
         width: 100%;
     }
 
+    .pop-rating{
+        padding-top: inherit;
+    }
+
     .pop-description{
         margin-top: inherit;
     }
@@ -502,20 +586,23 @@ footer{
     #main-content{
         display: flex;
         flex-direction: column;
-        height: 180rem;
+        height: 193rem; /*180*/
         justify-content: inherit;
     }
 
     .host-item{
-        width:100%;
-        height: 19%;
+        width: 100%;
         margin-top: 1rem;
         box-sizing: border-box;
+        height: 11rem;
+        align-self: center;
+
+      
     }
 
     .hosts-results {
         flex-flow: inherit;
-        height: 90%;
+        height: 96%; /*90% modif*/
     }
 
     #activities{
@@ -537,6 +624,7 @@ footer{
         flex-direction: column;
         height: 30rem;
         justify-content: inherit;
+        margin-top: 2em;
     }
 
     .foot-ele{
@@ -545,20 +633,52 @@ footer{
     }
 
 }
-
-
-    
+  
 @media screen and (min-width:450px) and (max-width:545px){
     body{
         max-height: inherit;
     }
     
+    #signup:hover{
+        border-top: inherit;
+        border-bottom: inherit;
+    }
 
-    #logo-area{
-        width: 6rem;
-        height: 3rem;
-        align-self: start;
-        margin-right: auto;
+    .nav-it:hover{
+        color:#0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: inherit;
+    }
+
+    .logo-area{
+        padding-top: 10px;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #hebergements{
+        width: 100%;
+        text-align: center;
+        padding-right: 30px;
+        justify-content: center;
+    }
+
+    #activites{
+        width:100%;
+        justify-content: center;
+    }
+
+    #act-nav-it {
+        text-align: center;
+    }
+
+    #activities{
+        width: 100%;
+        text-align: center;
     }
 
     #signup{
@@ -566,16 +686,6 @@ footer{
         grid-row: 1;
         justify-self: flex-end;
     }
-
-
-    #hebergements{
-        margin-left: inherit;
-    }
-
-    .nav-it{
-        margin-left: 0.5em;
-    }
-
 
     .searchbar{
         align-self: center;
@@ -594,7 +704,7 @@ footer{
     }
 
     #searchbar-input{
-        width: 10.95rem;
+        width: 9.95rem;
         font-size: 1rem;
     }
 
@@ -630,6 +740,10 @@ footer{
         justify-content: inherit;
         box-sizing: border-box;
        
+    }
+
+    .pop-rating{
+        padding-top: inherit;
     }
 
     #popular{
@@ -694,6 +808,7 @@ footer{
         flex-direction: column;
         height: 30rem;
         justify-content: inherit;
+        margin-top: 2em;
     }
 
     .foot-ele{
@@ -704,7 +819,7 @@ footer{
 
 
 
-    @media screen and (min-width:545px) and (max-width:1200px){
+    @media screen and (min-width:545px) and (max-width:800px){
     body{
         max-height: inherit;
     }
@@ -733,11 +848,13 @@ footer{
     #logo-area{
         width: 6rem;
         height: 3rem;
-        align-self: start;
+        align-self: end;
         margin-right: auto;
     }
 
-  
+    .pop-rating{
+        padding-top: inherit;
+    }
 
     .searchbar{
         align-self: center;
@@ -848,6 +965,7 @@ footer{
         flex-direction: row;
         height: 10rem;
         width:100%;
+        margin-top: 2em;
     }
 
     .foot-ele{
@@ -868,7 +986,188 @@ footer{
         width: 29%;
         height: 47%;
     }
+
+    .pop-rating{
+        padding-top: inherit;
+    }
+
+    footer{
+        margin-top: 2em;
+    }
     
+}
+
+@media screen and (min-width:800px) and (max-width:1200px){
+    body{
+        max-height: inherit;
+    }
+    
+    .pop-rating{
+        padding-top: inherit;
+    }
+
+    #signup{
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: flex-end;
+    }
+
+    #logo{
+        width: 70%;
+        height: 80%;
+    }
+
+    #hebergements{
+        margin-left: inherit;
+    }
+
+    .nav-it{
+        margin-left: 0.5em;
+    }
+
+    #logo-area{
+        width: 6rem;
+        height: 3rem;
+        align-self: end;
+        margin-right: auto;
+    }
+
+  
+
+    .searchbar{
+        align-self: center;
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+
+    #search-filters{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    #filters-section{
+        flex-wrap: wrap;
+        display: flex;
+    }
+   
+    #main-hosting{
+        display:flex;
+        flex-direction: column-reverse;
+        margin-bottom: 3rem;
+        height: 132rem;
+        justify-content: flex-end;
+    }
+
+    #hosts{
+        display:flex;
+        flex-direction: column;
+        height: 40%;;
+        width: 100%;
+        justify-content: inherit;
+        box-sizing: border-box;
+       
+    }
+
+    #popular{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        height: 22%;
+        margin-bottom: 1rem;
+    }
+
+    .pop-section{
+        flex-direction: row;
+
+    }
+
+    .pop-items {
+        width: 13rem;
+        height: 15rem;
+        width: 32%;
+        align-self: center;
+        max-width: 30rem;
+        flex-direction: column;
+    }
+
+    .pop-img{
+        width: 100%;
+        height: 56%;
+
+    }
+
+    .pop-description{
+        height: 10%;
+    }
+
+    .pop-figure{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .pop-rating, .pop-description{
+        padding-left:7px;
+    }
+    #main-content{
+        display: flex;
+        flex-direction: column;
+        height: 130rem;
+        justify-content: inherit;
+    }
+
+    .host-item{
+        width: 47%;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        height: 12rem;
+        align-self: center;
+    }
+
+    .hosts-results {
+        flex-flow: inherit;
+        height: 96%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .act-section{
+        display:flex;
+        flex-direction: row;
+        height: 41rem;
+        flex-wrap:wrap;
+    }
+
+    #activities-header{
+        margin-bottom: 2rem;
+    }
+
+    .activities{
+        height: 45rem;
+        margin-top: -50rem;
+    }
+
+    .act-items{
+        width: 46%;
+        align-self: center;
+        height: 12rem;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        width:100%;
+        margin-top: 3em;
+    }
+
+    .foot-ele{
+        margin-bottom: 1rem;
+        width: 30%;
+    }
 }
 
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bcab95efac.js" crossorigin="anonymous"></script>
-    <title>Réservia</title>
+    <title>Réservia - OpenclassRooms</title>
     <link rel="stylesheet" href="p2-template-copy2.css"/>
 </head>
 
@@ -15,11 +15,11 @@
     <header>
         <div id="logo-area" class="logo-area"><img class="logo" src="images/logo/reservia@3x.png" alt="Logo Reservia"/></div>
 
-        <div id="hebergements" class="nav-it"><a href="#hosting-all">Hébergements</a></div>
+        <div id="hebergements" class="nav-it"><a href="#hosts">Hébergements</a></div>
 
-        <div id="activites" class="nav-it"><a href="#activities">Activités</a></div>
+        <div id="activites" class="nav-it"><a id="act-nav-it" href="#activities">Activités</a></div>
 
-        <div id="signup" class="nav-it"><a><strong>S'inscrire</strong></a></div>
+        <div id="signup" class="nav-it --signup"><a><strong>S'inscrire</strong></a></div>
 
     </header>
         
@@ -40,24 +40,24 @@
         <div id="search-filters">
             <h2>Filtres</h2>
             <div id="filters-section">
-                   <button id="economical" class="filters">
+                   <button id="economical" class="filters growshadow">
                         <i class="fas fa-money-bill-wave --filtersicon"></i>
                         <span class="filters-it">Economique</span>
                     </button>
                 
 
-                    <button id="familial" class="filters">
+                    <button id="familial" class="filters growshadow">
                         <i class="fas fa-child --filtersicon"></i>
                         <span class="filters-it">Familial</span>
                     </button>
 
-                    <button id="romantic" class="filters">
+                    <button id="romantic" class="filters growshadow">
                         <i class="fas fa-heart --filtersicon"></i>
                         <span class="filters-it">Romantique</span>
                     </button>
     
 
-                    <button id="animals" class="filters">
+                    <button id="animals" class="filters growshadow">
                         <i class="fas fa-dog --filtersicon"></i>
                         <span class="filters-it">Animaux autorisés</span>
                     </button>
@@ -80,7 +80,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Auberge de la Cannebière</h3>
                                     <p class="card-description">Nuit à partir de <strong>25€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
 
@@ -91,7 +91,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Hôtel du port</h3>
                                     <p class="card-description">Nuit à partir de <strong>52€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i></p>
                                 </div>
                             </a>
                             
@@ -100,7 +100,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Hôtel les mouettes</h3>
                                     <p class="card-description">Nuit à partir de <strong>76€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
 
@@ -109,7 +109,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Hôtel de la mer</h3>
                                     <p class="card-description">Nuit à partir de <strong>46€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
 
@@ -118,7 +118,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Auberge Le Panier</h3>
                                     <p class="card-description">Nuit à partir de <strong>23€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
 
@@ -127,7 +127,7 @@
                                 <div class="host-description">
                                     <h3 class="card-header">Hôtel chez Amina</h3>
                                     <p class="card-description">Nuit à partir de <strong>96€</strong></p>
-                                    <p class="card-description"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <p class="card-description"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i></p>
                                 </div>
                             </a>
                         </div>
@@ -141,9 +141,9 @@
                                 <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre verte"></div>
 
                                 <div class="pop-description">
-                                    <h3 class="pop-header">Hôtel du Soleil le Matin</h3>
-                                    <p class="pop-description">Nuit à partir de <strong>128€</strong></p>
-                                    <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <h3 class="card-header">Hôtel du Soleil le Matin</h3>
+                                    <p class="pop-description --poptext">Nuit à partir de <strong>128€</strong></p>
+                                    <p class="pop-rating"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i></p>
                                 </div>
 
                             </a>
@@ -153,9 +153,9 @@
                                 <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre luxueuse"></div>
 
                                 <div class="pop-description">
-                                    <h3 class="pop-header">Au Coeur de l'eau <br/>Chambres d'hôtes</h3>
-                                    <p class="pop-description">Nuit à partir de <strong>71€</strong></p>
-                                    <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <h3 class="card-header">Au Coeur de l'eau Chambres d'hôtes</h3>
+                                    <p class="pop-description --poptext">Nuit à partir de <strong>71€</strong></p>
+                                    <p class="pop-rating"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
 
@@ -163,9 +163,9 @@
                                 <div class="pop-img"><img class="pop-figure" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double"></div>
 
                                 <div class="pop-description">
-                                    <h3 class="pop-header">Hôtel Tout bleu et Blanc</h3>
-                                    <p class="pop-description">Nuit à partir de <strong>68€</strong></p>
-                                    <p class="pop-rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <h3 class="card-header">Hôtel Tout bleu et Blanc</h3>
+                                    <p class="pop-description --poptext">Nuit à partir de <strong>68€</strong></p>
+                                    <p class="pop-rating"><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --bluestar"></i><i class="fas fa-star --greystar"></i></p>
                                 </div>
                             </a>
                         </div>
