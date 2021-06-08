@@ -560,6 +560,11 @@ footer{
         text-align: center;
     }
 
+    #activities-header {
+        text-align: start;
+        padding-left: 29px;
+    }
+
     #signup{
         grid-column: 2;
         grid-row: 1;
@@ -878,7 +883,7 @@ footer{
 
 
     #activities-header{
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
 
     .activities{
