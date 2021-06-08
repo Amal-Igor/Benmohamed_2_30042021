@@ -422,7 +422,8 @@ border-radius: 28px;
 }
 
 .act-items{
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 20px 20px;
+box-shadow: 8px 14px 22px #0000002e;
 }
 
 .act-figure{
@@ -437,8 +438,12 @@ border-radius: 28px;
     grid-column: 1;
     grid-row: 1 / 4;
 }
-#act-1-img, #act-2-img, #act-3-img, #act-4-img, #act-5-img, #act-6-img{
-    height: 85%;
+#act-2-img, #act-3-img, #act-5-img, #act-6-img{
+    height: 81%;
+}
+
+#act-1-img, #act-4-img{
+    height:91%;
 }
 
 #act-2{
@@ -674,6 +679,10 @@ footer{
         height: 75rem;
     }
 
+    #act-1-img, #act-4-img{
+        height:81%;
+    }
+
     .act-items{
         height: 11rem;
     }
@@ -750,6 +759,11 @@ footer{
     #activities{
         width: 100%;
         text-align: center;
+    }
+
+    .act-items > h3 {
+        padding-top: 10px;
+        text-align: start;
     }
 
     #signup{
@@ -873,6 +887,10 @@ footer{
         height: 10rem;
     }
 
+    #act-1-img, #act-4-img{
+        height:81%;
+    }
+
 
     footer{
         display: flex;
@@ -976,13 +994,14 @@ footer{
 
     .pop-section{
         flex-direction: column;
+        width: 100%;
 
     }
 
     .pop-items {
         width: 13rem;
         height: 8rem;
-        width: 75%;
+        width: 100%;
         align-self: center;
         max-width: 30rem;
     }
@@ -1028,6 +1047,10 @@ footer{
         width: 46%;
         align-self: center;
         height: 12rem;
+    }
+
+    #act-1-img, #act-4-img{
+        height:81%;
     }
 
 
@@ -1245,6 +1268,9 @@ footer{
         height: 12rem;
     }
 
+    #act-1-img, #act-4-img{
+        height:81%;
+    }
 
     footer{
         display: flex;
