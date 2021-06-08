@@ -268,7 +268,8 @@ header{
     width: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-color: #f2f2f2;
+border-radius: 28px;
 }
 
 .hosts-results{
@@ -276,14 +277,25 @@ header{
     height: 80%;
     justify-content: center;
     flex-flow: wrap;
-    margin-bottom: 1em;
+}
+
+#hosts-header{
+    margin-bottom: 23px;
+    padding-top: 14px;
+
+}
+
+#hosts-header, #hosts-footer{
+    padding-left: 29px;
 }
 
 .host-item{
-    height: 49%;
-    width: 32%;
-    border-radius: 12px;
-    box-shadow: 8px 14px 22px #0000002e;
+        height: 40%;
+        width: 30%;
+        border-radius: 12px;
+        box-shadow: 8px 14px 22px #0000002e;
+        margin-right: 10px;
+        margin-bottom: 28px;
 }
 
 .host-img{
@@ -511,6 +523,10 @@ footer{
         margin-top: 18px;
     }
 
+    #researchsection{
+        margin-bottom: 9rem;
+    }
+
     #activites{
         width:100%;
         justify-content: center;
@@ -561,7 +577,7 @@ footer{
     }
 
     #searchbar-input{
-        width: 10.95rem;
+        width: 8.95rem;
         font-size: 1rem;
     }
 
@@ -592,11 +608,10 @@ footer{
     #hosts{
         display:flex;
         flex-direction: column;
-        height: 70%;
         width: 100%;
         justify-content: inherit;
         box-sizing: border-box;
-       
+        background-color: inherit;
     }
 
     #popular{
@@ -605,7 +620,7 @@ footer{
         width: 100%;
         box-sizing: border-box;
         height: 29%;
-        border-radius: 22px;
+        border-radius: inherit;
     }
 
     .pop-section{
@@ -615,7 +630,7 @@ footer{
     .pop-items {
         width: 13rem;
         height: 8.5rem;
-        width: 100%;
+        width: 94%;
         margin-bottom: 17px;
     }
 
@@ -710,6 +725,10 @@ footer{
         grid-template-rows: 50% 50%;
     }
 
+    #researchsection{
+        margin-bottom: 2rem;
+    }
+
     #hebergements{
         width: 100%;
         text-align: center;
@@ -787,10 +806,11 @@ footer{
     #hosts{
         display:flex;
         flex-direction: column;
-        height: 70%;
+        /*height: 70%;*/
         width: 100%;
         justify-content: inherit;
         box-sizing: border-box;
+        background-color: inherit;
        
     }
 
@@ -804,6 +824,7 @@ footer{
         width: 100%;
         box-sizing: border-box;
         height: 29%;
+        border-radius: inherit;
     }
 
     .pop-items {
@@ -820,8 +841,7 @@ footer{
     }
 
     .host-item{
-        width: 86%;
-        margin-top: 1rem;
+        width: 90%;
         box-sizing: border-box;
         height: 11rem;
         align-self: center;
@@ -848,7 +868,7 @@ footer{
     }
 
     .act-items{
-        width:80%;
+        width:90%;
         align-self: center;
         height: 10rem;
     }
@@ -941,6 +961,7 @@ footer{
         width: 100%;
         justify-content: inherit;
         box-sizing: border-box;
+        background-color: inherit;
        
     }
 
@@ -975,7 +996,6 @@ footer{
 
     .host-item{
         width: 47%;
-        margin-top: 1rem;
         box-sizing: border-box;
         height: 12rem;
         align-self: center;
@@ -1065,6 +1085,10 @@ footer{
         grid-column: 2;
         grid-row: 1;
         justify-self: flex-end;
+    }
+
+    #hosts-footer{
+        padding-bottom: 7px;
     }
 
     #logo{
