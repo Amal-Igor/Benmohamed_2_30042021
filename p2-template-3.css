@@ -33,6 +33,9 @@ body{
     margin-right: 1.5em;*/
 }
 
+
+    
+
 h2{
     margin-bottom: 0;
     margin-right: 1rem;
@@ -99,18 +102,24 @@ h3{
     display: flex;
     flex-direction: column;
     margin-bottom: 2em;
+    width: 92%;
 }
 
 .searchbar{
-    width: 30rem;
+    width: 100%;
     height:3rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    min-width: max-content;
     margin-bottom: 2em;
     align-items: center;
+}
+
+#searchbar-button::before {
+    content: "Rechercher";
+    font-family: 'raleway';
+    font-size: 14px;
 }
 
 #searchbar-logo{
@@ -140,7 +149,8 @@ h3{
     border-bottom: #F2F2F2 1px solid;
     padding: 0 1.5rem;
     box-sizing: border-box;
-    width: 12.95rem;
+    width: 26%;
+    max-width: 40%;
     font-size: 1.25rem;
     height: 93%;
 }
@@ -156,6 +166,8 @@ h3{
     font-size: 1rem;
     height: 100%;
     cursor: pointer;
+    width: 30%;
+    max-width: min-content;
 }
 
 #filters-section {
@@ -211,6 +223,7 @@ h3{
 .filters-it {
     padding-right: 1em;
     font-size: 16px;
+    font-family: 'raleway';
 }
 
 
@@ -305,7 +318,7 @@ border-radius: 28px;
 .host-img{
     height: 64%;
     object-fit: cover;
-    margin-left: 7.75px;
+   /* margin-left: 7.75px;*/
     padding: 6px 0px 0px 0px;
     width:94%;
 }
@@ -320,7 +333,6 @@ border-radius: 28px;
 .host-description {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
     margin-top: 22px;
 }
 
@@ -381,7 +393,7 @@ border-radius: 28px;
     height: 30%;
     display:flex;
     border-radius: 16px;
-    box-shadow: 0px 0px 4px #0000002e;
+    box-shadow: -1px 1px 0px 1px #F2F2F2;
     margin-bottom: 1em;
     background: white;
 }
@@ -397,7 +409,6 @@ border-radius: 28px;
 .pop-rating{
     margin-top: 2em;
     font-size: 0.75rem;
-    padding-top: 3em;
 }
 
 .pop-description{
@@ -530,8 +541,7 @@ box-shadow: 8px 14px 22px #0000002e;
     margin-bottom: 0.25rem;
     font-size: 0.85rem;
 }
-
-@media screen and (max-width:450px) {
+@media screen and (max-width:501px) {
     body{
         max-height: inherit;
     }
@@ -549,7 +559,6 @@ box-shadow: 8px 14px 22px #0000002e;
     #host-nav-it{
             font-size: 14px;
             text-align: end;
-            margin-right: 20px;
     }
 
     .top-content-header {
@@ -560,12 +569,17 @@ box-shadow: 8px 14px 22px #0000002e;
             font-size: 14px;
     }
 
+    #hebergements, #activites{
+        border-bottom: 2px solid #F2F2F2;
+    }
+
     #hebergements{
         width: 100%;
         text-align: center;
         padding-right: 30px;
         justify-content: center;
         margin-top: 18px;
+        align-items: center;
     }
 
     #researchsection{
@@ -593,7 +607,7 @@ box-shadow: 8px 14px 22px #0000002e;
         font-size: 16px;
     }
     
-    .nav-it:hover{
+    #hebergements, #activites:hover{
         color:#0065FC;
         border-bottom: 2px solid #0065FC;
         border-top: inherit;
@@ -606,7 +620,7 @@ box-shadow: 8px 14px 22px #0000002e;
 
     #activities-header {
         text-align: start;
-        padding-left: 29px;
+        padding-left: 0px;
     }
 
     #signup{
@@ -615,37 +629,44 @@ box-shadow: 8px 14px 22px #0000002e;
         justify-self: flex-end;
     }
 
+    #research-header{
+        align-self: center;
+        width: 88%;
+    }
+
     .searchbar{
         align-self: center;
         margin-top: 1rem;
         align-self: flex-start;
-        width: auto;
+        width: 100%;
     }
 
-    #searchbar-text{
-        font-size:0;
-    }
-
-    #searchbar-icon{
-        font-size: 1em;
-        position: relative;
-        bottom: 8px;
-    }
 
     #searchbar-input{
-        width: 8.95rem;
+        width: 40%;
         font-size: 1rem;
     }
 
+    #searchbar-button::before{
+        font-family: "FontAwesome";
+        content: "\f002";
+        font-weight: 400;
+        font-size: 15px;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+
     #searchbar-button{
-        width: 4rem;
+        width: 11%;
+        border-radius: 1rem 1rem 1rem 1rem;
     }
 
     #search-filters{
         display:flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 100%;
+        width: 87%;
         margin-top: 1rem;
     }
 
@@ -653,6 +674,7 @@ box-shadow: 8px 14px 22px #0000002e;
         flex-wrap: wrap;
         display: flex;
         width: 100%;
+        margin-bottom: 1em;
     }
 
     .filters-header{
@@ -661,6 +683,8 @@ box-shadow: 8px 14px 22px #0000002e;
 
     .filters-it{
         font-size: 13px;
+        font-weight: 350;
+        font-family: 'raleway';
     }
     
     #resultsfooter{
@@ -670,10 +694,11 @@ box-shadow: 8px 14px 22px #0000002e;
     }
 
     .--resultsicon{
-        height: 27px;
-        width: 27px;
-        padding-left: 11px;
-        padding-top: 8px;
+        height: 21px;
+        width: 23px;
+        padding-left: 8px;
+        padding-top: 5px;
+        font-size: 8px;
     }
 
     #main-hosting{
@@ -694,7 +719,12 @@ box-shadow: 8px 14px 22px #0000002e;
 
 
     .card-header{
-        margin-left: 16px;
+        margin-left: 7px;
+        margin-top: 4px;
+    }
+
+    .--poptext{
+        margin-top: 1em;
     }
 
     #popular{
@@ -719,6 +749,7 @@ box-shadow: 8px 14px 22px #0000002e;
 
     #hosts-header{
         font-size: 22px;
+        padding-left: 0px;
     }
 
     .--popicon{
@@ -738,11 +769,13 @@ box-shadow: 8px 14px 22px #0000002e;
     }
 
     .pop-rating{
-        padding-top: inherit;
+        margin-top: auto;
     }
 
     .pop-description{
-        margin-top: inherit;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     #main-content{
@@ -822,240 +855,7 @@ box-shadow: 8px 14px 22px #0000002e;
 
 }
 
-@media screen and (min-width:450px) and (max-width:545px){
-    body{
-        max-height: inherit;
-    }
-    
-    #signup:hover{
-        border-top: inherit;
-        border-bottom: inherit;
-    }
-
-    #host-nav-it {
-        font-size: 14px;
-        text-align: end;
-        margin-right: 34px;
-    }
-
-    #act-nav-it {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    #signup-nav-it {
-        font-size: 16px;
-    }
-
-    .nav-it:hover{
-        color:#0065FC;
-        border-bottom: 2px solid #0065FC;
-        border-top: inherit;
-    }
-
-    .logo-area{
-        padding-top: 10px;
-    }
-
-    .top-header{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-    }
-
-    #researchsection{
-        margin-bottom: 2rem;
-    }
-
-    #pop-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 93%;
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
-
-    #hebergements{
-        width: 100%;
-        text-align: center;
-        padding-right: 30px;
-        justify-content: center;
-        margin-top: 18px;
-    }
-
-    #activites{
-        width:100%;
-        justify-content: center;
-        margin-top: 18px;
-    }
-
-    #act-nav-it {
-        text-align: center;
-    }
-
-    #activities{
-        width: 100%;
-        text-align: center;
-    }
-
-    .act-items > h3 {
-        padding-top: 10px;
-        text-align: start;
-    }
-
-    #signup{
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: flex-end;
-    }
-
-    .searchbar{
-        align-self: center;
-        margin-top: 1rem;
-        align-self: flex-start;
-    }
-
-    #searchbar-text{
-        font-size:0;
-    }
-
-    #searchbar-icon{
-        font-size: 1em;
-        position: relative;
-        bottom: 8px;
-    }
-
-    #searchbar-input{
-        width: 9.95rem;
-        font-size: 1rem;
-    }
-
-    #searchbar-button{
-        width: 4rem;
-    }
-
-    #search-filters{
-        display:flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 90%;
-        margin-top: 1rem;
-    }
-
-    #filters-section{
-        flex-wrap: wrap;
-        display: flex;
-    }
-   
-    #main-hosting{
-        display:flex;
-        flex-direction: column-reverse;
-        margin-bottom: 3rem;
-        height: 110rem;
-    }
-
-    #hosts{
-        display:flex;
-        flex-direction: column;
-        /*height: 70%;*/
-        width: 100%;
-        justify-content: inherit;
-        box-sizing: border-box;
-        background-color: inherit;
-    }
-
-    .host-img{
-        margin-left:0.5px;
-        width: 100%;
-        padding: inherit;
-        height:60%;
-    }
-
-    .pop-rating{
-        padding-top: inherit;
-    }
-
-    #popular{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        box-sizing: border-box;
-        height: 29%;
-        border-radius: inherit;
-        align-items: normal;
-    }
-
-    .pop-items {
-        width: 97%;
-        height: 8rem;
-        align-self: center;
-        background: white;
-    }
-
-    #main-content{
-        display: flex;
-        flex-direction: column;
-        height: 193rem;
-        justify-content: inherit;
-    }
-
-    .host-item{
-        width: 97%;
-        box-sizing: border-box;
-        height: 11rem;
-        align-self: center;
-        margin-right: inherit;
-    }
-
-    .hosts-results {
-        flex-flow: inherit;
-        height: 96%;
-    }
-
-    .act-section{
-        display:flex;
-        flex-direction: column;
-        height: 89rem;
-    }
-
-
-    #activities-header{
-        margin-bottom: 0rem;
-    }
-
-    .activities{
-        height: 80rem;
-    }
-
-    .act-items{
-        width:90%;
-        align-self: center;
-        height: 11rem;
-    }
-
-    #act-1-img, #act-4-img{
-        height:81%;
-    }
-
-
-    .main-footer{
-        display: flex;
-        flex-direction: column;
-        height: 33rem;
-        justify-content: inherit;
-        margin-top: 2em;
-    }
-
-    .foot-ele{
-        margin-bottom: 1rem;
-        width: 30%;
-    }
-}
-
-
-
-    @media screen and (min-width:545px) and (max-width:800px){
+    @media screen and (min-width:501px) and (max-width:800px){
     body{
         max-height: inherit;
     }
@@ -1098,6 +898,12 @@ box-shadow: 8px 14px 22px #0000002e;
         align-self: flex-start;
     }
 
+    #searchbar-button::before {
+        content:"Rechercher";
+        font-family: 'raleway';
+        font-size: 14px;
+    }
+
     #search-filters{
         display:flex;
         flex-direction: column;
@@ -1122,9 +928,9 @@ box-shadow: 8px 14px 22px #0000002e;
     #hosts{
         display:flex;
         flex-direction: column;
-        height: 40%;;
+        height: 44%;;
         width: 100%;
-        justify-content: inherit;
+        justify-content: flex-start;
         box-sizing: border-box;
         background-color: inherit;
        
@@ -1135,7 +941,7 @@ box-shadow: 8px 14px 22px #0000002e;
         flex-direction: column;
         width: 100%;
         box-sizing: border-box;
-        height: 19%;
+        height: 23%;
         align-items: inherit;
     }
 
@@ -1170,18 +976,40 @@ box-shadow: 8px 14px 22px #0000002e;
     .host-item{
         width: 43%;
         box-sizing: border-box;
-        height: 12rem;
+        height: 13rem;
         align-self: center;
-        margin-right: inherit;
-        margin-bottom: inherit;
+        margin-right: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .host-img{
+        padding: inherit;
+        width:100%;
+    }
+
 
     .hosts-results {
         flex-flow: inherit;
-        height: 41rem;
+        height: 47rem;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .host-description{
+        align-self: flex-start;
+        margin-top: 4px;
+    }
+    
+    .card-rating{
+        font-size:10px;
+    }
+    
+    .card-description{
+        font-size:13px;
     }
 
     .act-section{
@@ -1225,6 +1053,12 @@ box-shadow: 8px 14px 22px #0000002e;
 
     @media all and (min-width:812px) and (max-width:1020px){
 
+    #searchbar-button::before {
+        content:"Rechercher";
+        font-family: 'raleway';
+        font-size: 14px;
+    }
+
     .act-section{
         display:flex;
         flex-direction:row;
@@ -1253,6 +1087,12 @@ box-shadow: 8px 14px 22px #0000002e;
     
     .pop-rating{
         padding-top: inherit;
+    }
+
+    #searchbar-button::before {
+        content:"Rechercher";
+        font-family: 'raleway';
+        font-size: 14px;
     }
 
     .sectionheader{
