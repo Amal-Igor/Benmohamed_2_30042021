@@ -435,7 +435,7 @@ border-radius: 28px;
 
 /*activities*/
 .activities{
-    height: 40rem;
+    height: 36rem;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
@@ -1145,6 +1145,10 @@ border-radius: 28px;
         height:81%;
     }
 
+    #act-3-img {
+        height: 81%;
+    }
+
 
     .main-footer {
         display: flex;
@@ -1418,7 +1422,6 @@ border-radius: 28px;
                 width: 13rem;
                 height: 15rem;
                 width: 32%;
-                align-self: center;
                 max-width: 30rem;
                 flex-direction: column;
                 margin-right: 1em;
@@ -1432,8 +1435,9 @@ border-radius: 28px;
             }
         
             .pop-img{
-                width: 100%;
+                width: 101%;
                 height: 56%;
+                margin-right: 0;
         
             }
         
@@ -1442,16 +1446,17 @@ border-radius: 28px;
             }
         
             .pop-figure{
-                border-radius: 20px 20px 0 0;
+                border-radius: 16px 16px 0 0;
+                padding: inherit;
             }
         
             .pop-rating, .pop-description{
-                padding-left:7px;
+                padding-right: 50px;
             }
             #main-content{
                 display: flex;
                 flex-direction: column;
-                height: 130rem;
+                height: 124rem;
                 justify-content: inherit;
             }
         
@@ -1508,6 +1513,10 @@ border-radius: 28px;
         
             #act-1-img, #act-4-img{
                 height:81%;
+            }
+
+            #act-3-img {
+                height: 81%;
             }
         
             .main-footer{
